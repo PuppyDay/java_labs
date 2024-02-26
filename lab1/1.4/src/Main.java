@@ -7,15 +7,15 @@ public class Main {
         String correct_password = "1234567890";
 
         if (args.length == 0) {
-            System.out.printf("Укажите пароль.");
+            System.out.print("Укажите пароль.");
             return;
         }
 
         if (Objects.equals(args[0], correct_password))  {
-            System.out.printf("Введен верный пароль.");
+            System.out.print("Введен верный пароль.");
             return;
         }
 
-        System.out.printf("Введенный пароль некорректен.");
+        System.out.print("Введенный пароль некорректен.");
     }
 }

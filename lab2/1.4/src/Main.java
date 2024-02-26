@@ -1,6 +1,7 @@
 // Ввести n слов с консоли. Найти слово, в котором число различных символов минимально.
 // Если таких слов несколько, найти первое из них.
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -23,13 +24,20 @@ public class Main {
 
         for (int i = 0; i < count; i++) {
             String word = sc.next();
-            if (min_count < 0 || word.chars().distinct().count() < min_count) {
-                min_count = (int) word.chars().distinct().count();
+            int chars_count = (int) word.chars().distinct().count();
+
+            if (min_count < 0 || chars_count < min_count) {
+                min_count = chars_count;
                 min_word = word;
             }
         }
 
         System.out.println("Слово, в котором число различных символов минимально: " + min_word);
+
+        System.out.println("Гендина Нина Борисовна");
+        System.out.println("Задание получено 09.02.2024 14:30");
+        Date date = new Date();
+        System.out.println("Дата и время сдачи " + date.toString());
 
         sc.close();
     }

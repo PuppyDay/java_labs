@@ -1,0 +1,7 @@
+public enum Subject {
+    MATHEMATICS,
+    INFORMATICS,
+    PHYSICS,
+    CHEMISTRY,
+    RUSSIAN_LANGUAGE
+}

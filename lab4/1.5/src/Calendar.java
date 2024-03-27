@@ -19,13 +19,49 @@ public class Calendar {
         );
     }
 
+    public List<DayOff> getDayOffList() {
+        return this.dayOffList;
+    }
+
+    public void addDayOffList(String name, int dayOfWeekNumber, int day, boolean isHoliday) {
+        this.dayOffList.add(new DayOff(name, dayOfWeekNumber, day, isHoliday));
+    }
+
+    enum WeekDay {
+        MONDAY,
+        TUESDAY,
+        WEDNESDAY,
+        THURSDAY,
+        FRIDAY,
+        SATURDAY,
+        SUNDAY,
+    }
+
     class DayOff {
         private final String name;
         private final int dayOfWeekNumber;
+        private final int day;
+        private final boolean isHoliday;
 
-        DayOff(String name, int dayOfWeekNumber) {
+        DayOff(String name, int dayOfWeekNumber, int day, boolean isHoliday) {
             this.name = name;
             this.dayOfWeekNumber = dayOfWeekNumber;
+            this.day = day;
+            this.isHoliday = isHoliday;
+        }
+
+        public String toString() {
+            if (this.isHoliday) {
+                return String.format(
+                        "Праздник %s %d числа (%s)",
+                        this.name, this.day, WeekDay.values()[this.dayOfWeekNumber - 1]
+                );
+            }
+
+            return String.format(
+                    "Обычный выходной %d числа (%s)",
+                    this.day, WeekDay.values()[this.dayOfWeekNumber - 1]
+            );
         }
     }
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9ec00d48-2729-49b7-b764-9d58d7a796b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../lab6/2.4/src/input_file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab6/2.5/src/input_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/1.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/1.4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/1.4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/1.4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/1.5/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/1.5/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/2.4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/2.4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/2.5/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/2.5/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab7/2.4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab7/2.4/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2eoZV34uJe2m2TdD0UXotHdL4yJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/n.gendina/study/мага/япбд/lab5/t4.5/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ec00d48-2729-49b7-b764-9d58d7a796b1" name="Changes" comment="" />
+      <created>1712572911419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712572911419</updated>
+      <workItem from="1712572912470" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

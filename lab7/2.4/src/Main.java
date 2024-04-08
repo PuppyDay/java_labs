@@ -1,7 +1,5 @@
 // Найти, каких букв, гласных или согласных, больше в каждом предложении текста.
 
-import java.text.BreakIterator;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -10,16 +8,31 @@ public class Main {
 
         System.out.println("Введите текст:");
         String text = sc.nextLine();
+        String[] sentences = text.split("[.!?]");
 
-        BreakIterator iterator = BreakIterator.getWordInstance();
-        iterator.setText(text);
-        int start = iterator.first();
-        for (int end = iterator.next();
-             end != BreakIterator.DONE;
-             start = end, end = iterator.next()) {
-            System.out.println(start);
-            System.out.println(end);
-            System.out.println(text.substring(start, end));
+        for (String sentence: sentences) {
+            int vowels_count = 0, consonants_count = 0;
+            for (Character character: sentence.toCharArray()) {
+                if ((character >= 'А' && character <= 'Я') || (character >= 'а' && character <= 'я')) {
+                    if (String.valueOf(character).matches("[аеиоуыэюя]")) {
+                        vowels_count++;
+                    } else {
+                        consonants_count++;
+                    }
+                }
+            }
+
+            String result = String.format(
+                    "В предожении: %s - %d гласных и %d согласных", sentence, vowels_count, consonants_count
+            );
+            if (vowels_count > consonants_count) {
+                result += " (гласных больше)";
+            } else if (consonants_count > vowels_count) {
+                result += " (согласных больше)";
+            } else {
+                result += " (согласных и гласных одинаковое количество)";
+            }
+            System.out.println(result);
         }
     }
 }
